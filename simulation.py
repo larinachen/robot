@@ -12,7 +12,7 @@ p.setAdditionalSearchPath(pybullet_data.getDataPath())
 p.setGravity(0,0,-9.8)
 # add floor
 planeId = p.loadURDF("plane.urdf")
-p.loadSDF("box.sdf")
+p.loadSDF("boxes.sdf")
 
 # stepping throuhgh the world using 1000 steps
 for i in range(1000):
