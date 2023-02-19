@@ -5,8 +5,10 @@ import time
 physicsClient = p.connect(p.GUI)
 # pybullet.configureDebugVisualizer(pybullet.COV_ENABLE_GUI,0)
 
-# stepping throuhgh the world using 1000 steps
+# load world from box.sdf
+p.loadSDF("box.sdf")
 
+# stepping throuhgh the world using 1000 steps
 for i in range(1000):
 	print(f"starting iteration {i}")
 	p.stepSimulation()
